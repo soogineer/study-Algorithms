@@ -20,3 +20,15 @@ class BrowserHistory(object):
             steps -= 1
             self.current = self.current.next
             return self.current.val
+
+browserHistory = BrowserHistory("leetcode.com")
+browserHistory.visit("google.com")
+browserHistory.visit("facebook.com")
+browserHistory.visit("youtube.com")
+browserHistory.back(1)
+browserHistory.back(1)
+browserHistory.forword(1)
+browserHistory.visit("linkedin.com")
+browserHistory.forword(2)
+browserHistory.back(2)
+browserHistory.back(7)
