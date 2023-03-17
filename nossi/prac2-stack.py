@@ -1,4 +1,4 @@
-def dailiyTemperatures(temperatures):
+def dailyTemperatures(temperatures):
     ans = [0] * len(temperatures) # 배열을 0으로 설정
     stack = [] #stack 선언
     for cur_day, cur_temp in enumerate(temperatures):
@@ -8,4 +8,5 @@ def dailiyTemperatures(temperatures):
         stack.append((cur_day, cur_temp))
     return ans
 
-dailyTemperatures = ([73,74,75,71,69,72,76,73])
+temperatures = [73,74,75,71,69,72,76,73]
+dailyTemperatures(temperatures)
