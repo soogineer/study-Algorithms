@@ -1,3 +1,5 @@
+from collections import deque
+
 def bfs(root):
   visited = []
   if root is None:
