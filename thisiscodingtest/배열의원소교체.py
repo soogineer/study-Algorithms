@@ -15,8 +15,5 @@ def solution(n, k, arr_a, arr_b):
     answer = sum(arr_a)
     return answer
 
-n = 5
-k = 3
-arr_a = [1, 2, 5, 4, 3]
-arr_b = [5, 5, 6, 6, 5]
-print(solution(n, k, arr_a, arr_b))
+
+print(solution(n=5, k=3, arr_a=[1, 2, 5, 4, 3], arr_b=[5, 5, 6, 6, 5]))
