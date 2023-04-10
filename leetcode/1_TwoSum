@@ -7,9 +7,22 @@ def twoSum(nums, target):
 
     return False
 
-print(twoSum(nums=[2,7,11,15], target=9))
 
 
-# two Pointer 퓰이
 
+# two Pointer로 문제 풀이
+def twoSum(nums, target):
+    nums.sort()
+    l, r = 0, len(nums)-1
+    while l < r:
+        if nums[l] + nums[r] > target:
+            r -= 1
+        elif nums[l] + nums[r] < target:
+            l += 1
+        if nums[l] + nums[r] == target:
+            return True
+    return False
+
+
+print(twoSum(nums=[4,1,9,7,5,3,16], target=14))
 
