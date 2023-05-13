@@ -14,3 +14,4 @@ def solution(cards1, cards2, goal):
             j += 1
         
     return 'Yes' if answer == goal else 'No'
+    
