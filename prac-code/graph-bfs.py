@@ -12,11 +12,3 @@ def bfs(graph, start_v):
 
     return visited
 
-bfs(graph, 'A')
-graph = {
-    'A': ['B', 'D', 'E'],
-    'B': ['A', 'C', 'D'],
-    'C': ['B'],
-    'D': ['A', 'B'],
-    'E': ['A']
-}
