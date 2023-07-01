@@ -11,3 +11,4 @@ class LinkedList(object):
                 current = current.next
             current.next = new_node
 
+ 
