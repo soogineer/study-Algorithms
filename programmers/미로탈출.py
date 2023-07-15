@@ -16,7 +16,7 @@ def solution(maps):
             r,c,distance = i,j,0
             visited[i][j] = True # 시작 위치 방문 여부 체크
     
-    # BFS 탐색 시작
+    # BFS 탐색
     while True :
         for i in range(4) :
             x = [r + dr[i],c + dc[i]] # 다음 위치 계산
